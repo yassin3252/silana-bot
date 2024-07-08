@@ -3,7 +3,7 @@ let handler = async (m, { conn, text, usedPrefix, command }) => {
   if (text.length < 10) throw `يجب ان تكون الرسالة فيها اكثر من اربع كلمات `
   if (text.length > 1000) throw `الحد الادنى هو 1000 حرف اختر ما تريد قوله !`
   let teks = `*${command.toUpperCase()}!*\n\nfrom : *@${m.sender.split`@`[0]}*\n\nmessage : ${text}\n`
-  conn.reply(global.nomorown + '@s.whatsapp.net', m.quoted ? teks + m.quoted.text : teks, null, {
+  conn.reply(global.nomorown +212619841293 '@s.whatsapp.net', m.quoted ? teks + m.quoted.text : teks, null, {
       contextInfo: {
           mentionedJid: [m.sender]
       }
